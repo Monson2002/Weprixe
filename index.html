@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="bg-black flex justify-between items-center text-white p-2">
+    <header class="bg-black lg:hidden flex justify-between items-center text-white p-2">
         <div class="flex flex-row justify-center items-center">
             <div class="text-sm text-center m-auto p-[1px]">
                 litigo
@@ -33,47 +33,89 @@
         </div>
     </header>
 
+    
     <main>
         <div
-            class="h-80 bg-[url('https://media.istockphoto.com/id/1066557736/photo/passionate-about-their-project.jpg?s=612x612&w=0&k=20&c=QD-sh7a57qKNmpsf-_xVI74h-NTJEEWW0S1XrtP6L1U=')] bg-no-repeat ">
+            class="h-[80%] bg-[url('https://media.istockphoto.com/id/1066557736/photo/passionate-about-their-project.jpg?s=612x612&w=0&k=20&c=QD-sh7a57qKNmpsf-_xVI74h-NTJEEWW0S1XrtP6L1U=')] bg-no-repeat bg-cover">
             <div
-                class="container text-white font-Roboto p-8 pt-4 bg-gradient-to-b from-blue-800 to-transparent bg-opacity-70">
-                <h1 class="text-2xl font-semibold ">
+                class="container text-white font-Roboto p-8 pt-4 bg-gradient-to-b from-blue-800 to-transparent lg:bg-gradient-to-r from-blue-800 to-transparent bg-opacity-70">
+
+                <!-- Large Screen Starts here-->
+                <div class="hidden lg:flex justify-around items-center font-semibold z-20">
+                    <div class="left flex justify-center items-center">
+                        <div class="text-5xl text-center text-blue-400 m-auto p-[1px]">
+                            litigo
+                        </div>
+                        <div class="text-5xl text-center text-blue-400 m-auto p-[1px]">
+                            |
+                        </div>
+                        <div class="text-xl text-center m-auto mt-4 p-[1px]">
+                            FINANCIAL
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <ul class="flex">
+                            <li class="text-xl text-center m-4 p-4">
+                                HOME
+                            </li>
+                            <li class="text-xl text-center m-4 p-4">
+                                SERVICES
+                            </li>
+                            <li class="text-xl text-center m-4 p-4">
+                                CLIENTS
+                            </li>
+                            <li class="text-xl text-center m-4 p-4">
+                                FAQ
+                            </li>
+                            <li class="text-xl text-center m-4 p-4">
+                                ABOUT US
+                            </li>
+                            <li class="text-xl text-center m-4">
+                                <button class="bg-orange-400 rounded-sm p-4">APPLY NOW</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Large Screen Ends here-->
+
+
+                <h1 class="text-2xl lg:text-5xl font-semibold lg:mx-24 lg:mt-24">
                     Litigo Financial
                 </h1>
-                <h1 class="text-2xl font-semibold ">
+                <h1 class="text-2xl lg:text-5xl font-semibold lg:mx-24 ">
                     Funds Justice.
                 </h1>
-                <p class="text-xs">
+                <p class="text-sm lg:text-lg lg:mx-24 lg:mt-4 lg:w-1/2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reiciendis sit iure harum,
                     facilis, ratione
                 </p>
 
-                <h1 class="mt-4 text-xs font-semibold ">
+                <h1 class="mt-4 text-xs lg:text-xl font-semibold lg:mx-24 lg:mt-4">
                     Apply for free
                 </h1>
-                <div>
-                    <div class="flex justify-center items-center">
-                        <div class="relative mt-2 rounded-sm shadow-sm">
+                <div class="lg:mx-24">
+                    <div class="flex justify-center lg:justify-start items-center">
+                        <div class="relative lg:static mt-2 rounded-sm shadow-sm">
                             <input type="text" name="" id=""
-                                class="rounded-sm p-[2px] w-4/5 text-sm bg-transparent border-[1px] border-gray-300"
+                                class="rounded-sm p-[2px] lg:p-2 w-4/5 text-sm lg:text-md bg-transparent border-[1px] lg:border-2 border-gray-300"
                                 placeholder="Name">
                         </div>
-                        <div class="relative mt-2 rounded-sm shadow-sm">
+                        <div class="relative lg:static mt-2 rounded-sm shadow-sm">
                             <input type="text" name="" id=""
-                                class="rounded-sm p-[2px] w-4/5 text-sm bg-transparent border-[1px] border-gray-300 placeholder-white"
+                                class="rounded-sm p-[2px] lg:p-2 w-4/5 text-sm lg:text-md bg-transparent border-[1px] lg:border-2 border-gray-300 placeholder-white"
                                 placeholder="Phone">
                         </div>
                     </div>
-                    <div class="flex  items-center">
+                    <div class="flex items-center lg:mt-2">
                         <div class=" mt-2 rounded-sm shadow-sm">
                             <input type="text" name="" id=""
-                                class="rounded-sm p-[2px] w-[103px] text-sm bg-transparent border-[1px] border-gray-300 placeholder-white"
-                                placeholder="Name">
+                                class="rounded-sm p-[2px] lg:p-2 w-[103px] lg:w-4/5 text-sm lg:text-md bg-transparent border-[1px] lg:border-2 border-gray-300 placeholder-white"
+                                placeholder="Case Type">
                         </div>
-                        <div class=" mt-2 rounded-sm shadow-sm">
-                            <button class="bg-orange-400 rounded-sm w-[103px] h-6 m-[2px] ml-6 text-xs">APPLY
-                                NOW</button>
+                        <div class="mt-2 lg:w-44 rounded-sm shadow-sm">
+                            <button class="bg-orange-400 lg:p-2 rounded-sm w-[103px] lg:w-4/5 text-xs lg:text-md h-6 lg:h-[2.5rem] m-[2px] ml-6 lg:m-0">APPLY NOW</button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +123,7 @@
         </div>
 
         <div
-            class="dropdown-arrow flex justify-center items-center bg-white rounded-full shadow-2xl w-6 h-6 m-auto absolute top-[22rem] right-1/2">
+            class="dropdown-arrow flex justify-center items-center bg-white rounded-full shadow-2xl w-6 lg:w-8 h-6 lg:h-8 m-auto absolute top-[22rem] lg:top-[33.5rem] right-1/2">
             <i class="fa-solid fa-angle-down"></i>
         </div>
     </main>
@@ -89,11 +131,11 @@
     <section
         class="bg-[url('https://img.freepik.com/premium-vector/abstract-seamless-pattern-small-rhombus-pixels-white-colors_444390-9083.jpg?w=740')]">
         <section>
-            <div class="container text-black font-Roboto p-8 pt-4 ">
-                <h1 class="text-xl font-semibold flex justify-center items-center">
+            <div class="container text-black font-Roboto p-8 pt-4 lg:flex lg:flex-col lg:justify-center lg:items-center ">
+                <h1 class="text-xl lg:text-5xl lg:mx-24 lg:mt-24 font-semibold flex justify-center items-center">
                     How The Process Works
                 </h1>
-                <p class="text-xs flex justify-center items-center mt-2">
+                <p class="text-xs lg:text-xl lg:mx-24 lg:w-1/2 flex justify-center items-center mt-2 lg:mt-4">
                     Let us help you realize the the value of your claim through litigation funding with a team that
                     brings
                     you knowledge, experience and resources to partner with you.
@@ -101,7 +143,7 @@
             </div>
         </section>
 
-        <section class="card py-12">
+        <section class="lg:hidden card py-12">
 
             <div
                 class="w-6 h-6 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
@@ -132,7 +174,7 @@
 
         </section>
 
-        <section class="card py-12">
+        <section class="lg:hidden card py-12">
 
             <div
                 class="w-6 h-6 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
@@ -163,7 +205,7 @@
 
         </section>
 
-        <section class="card py-12">
+        <section class="lg:hidden card py-12">
 
             <div
                 class="w-6 h-6 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
@@ -193,6 +235,103 @@
             </div>
 
         </section>
+
+
+        <!-- Large Screen Starts -->
+        <div class="hidden lg:flex lg:justify-center lg:items-center lg:w-4/5 lg:m-auto">
+            <section class="card py-12">
+
+                <div
+                    class="w-6 lg:w-12 h-6 lg:h-12 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
+                    1</div>
+    
+                <h1 class="text-center m-2 font-Roboto font-semibold text-sm lg:text-lg">YOU APPLY</h1>
+    
+                <div
+                    class="m-auto mt-8 lg:my-16 w-4/5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="image flex justify-center items-center lg:py-8">
+                        <svg class="w-10 lg:w-20 h-10 lg:h-20 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                                clip-rule="evenodd"></path>
+                            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+                        </svg>
+                    </div>
+                    <a href="#" class="lg:flex lg:justify-center lg:items-center lg:mb-6">
+                        <h5 class="mb-2 text-base lg:text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <div class=" lg:flex lg:justify-center lg:items-center">
+                        <p class="mb-3 font-normal text-xs lg:text-xl text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:
+                        </p>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <section class="card py-12">
+
+                <div
+                    class="w-6 lg:w-12 h-6 lg:h-12 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
+                    1</div>
+    
+                <h1 class="text-center m-2 font-Roboto font-semibold text-sm lg:text-lg">YOU APPLY</h1>
+    
+                <div
+                    class="m-auto mt-8 lg:my-16 w-4/5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="image flex justify-center items-center lg:py-8">
+                        <svg class="w-10 lg:w-20 h-10 lg:h-20 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                                clip-rule="evenodd"></path>
+                            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+                        </svg>
+                    </div>
+                    <a href="#" class="lg:flex lg:justify-center lg:items-center lg:mb-6">
+                        <h5 class="mb-2 text-base lg:text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <div class=" lg:flex lg:justify-center lg:items-center">
+                        <p class="mb-3 font-normal text-xs lg:text-xl text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:
+                        </p>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <section class="card py-12">
+
+                <div
+                    class="w-6 lg:w-12 h-6 lg:h-12 m-auto font-bold text-gray-700 rounded-full bg-blue-400 flex items-center justify-center font-mono">
+                    1</div>
+    
+                <h1 class="text-center m-2 font-Roboto font-semibold text-sm lg:text-lg">YOU APPLY</h1>
+    
+                <div
+                    class="m-auto mt-8 lg:my-16 w-4/5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="image flex justify-center items-center lg:py-8">
+                        <svg class="w-10 lg:w-20 h-10 lg:h-20 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                                clip-rule="evenodd"></path>
+                            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+                        </svg>
+                    </div>
+                    <a href="#" class="lg:flex lg:justify-center lg:items-center lg:mb-6">
+                        <h5 class="mb-2 text-base lg:text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <div class=" lg:flex lg:justify-center lg:items-center">
+                        <p class="mb-3 font-normal text-xs lg:text-xl text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:
+                        </p>
+                    </div>
+                </div>
+    
+            </section>
+        </div>
+       
+        <!-- Large Screen Ends Here -->
+
 
     </section>
 
